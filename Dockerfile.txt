@@ -3,4 +3,4 @@ WORKDIR /
 COPY ./requirements.txt /code/requirements.txt
 RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt 
 COPY ./hackathon_test_model.py /code/hackathon_test_model.py 
-CMD ["python", "hackathon_test_model.py"]
+CMD ["python", "/hackathon_test_model.py"]
